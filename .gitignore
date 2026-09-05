@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Environments and caches
+.venv/
+venv/
+env/
+.cache/
+**/.cache/
+**/huggingface/
+wandb/
+
+# Credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*
+secrets*
+
+# Private experiments and logs
+experiments/**/private/
+**/api_logs/
+**/api-logs/
+*.log
+
+# Generated trajectories and outputs
+**/trajectories/
+*trajectory*.json
+*trajectory*.jsonl
+**/observations/
+**/raw_runs/
+**/results/
+**/outputs/
+
+# Gold and benchmark payloads
+*gold*.json
+*gold*.jsonl
+*benchmark*.json
+*benchmark*.jsonl
+*.parquet
+
+# Models, corpora, and indexes
+models/
+**/models/
+checkpoints/
+**/checkpoints/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.index
+*.faiss
+wiki-18.jsonl
+wiki-18.jsonl.gz
+wiki_dump.jsonl
+part_*
