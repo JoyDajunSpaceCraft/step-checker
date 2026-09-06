@@ -1,0 +1,6 @@
+[
+  {"name": "get_order_details", "is_write": false, "object_id_argument": "order_id"},
+  {"name": "modify_pending_order_items", "is_write": true, "allowed_statuses": ["pending"], "object_id_argument": "order_id"},
+  {"name": "exchange_delivered_order_items", "is_write": true, "allowed_statuses": ["delivered"], "object_id_argument": "order_id"},
+  {"name": "cancel_pending_order", "is_write": true, "allowed_statuses": ["pending"], "object_id_argument": "order_id"}
+]

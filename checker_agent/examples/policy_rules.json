@@ -1,0 +1,15 @@
+[
+  {
+    "rule_id": "exchange-confirmation",
+    "operation": "exchange_delivered_order_items",
+    "clause": "The agent must obtain explicit confirmation before executing an exchange.",
+    "requires_confirmation": true,
+    "required_state": {"status": "delivered"}
+  },
+  {
+    "rule_id": "modify-pending-only",
+    "operation": "modify_pending_order_items",
+    "clause": "Only pending orders may be modified.",
+    "required_state": {"status": "pending"}
+  }
+]
